@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- this is font awesome link  -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+	<!-- dasyui link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <html lang="en" data-theme="light">
+    <link rel="stylesheet" href="./index.css">
+    <title>make games</title>
+</head>
+<body class="uppercase">
+    <main class="min-h-screen bg-[#1E1E1E] "
+
+    style="background-image: url(./images/background.png); background-position: center; background-repeat: no-repeat;">
+    <!-- home-screen -->
+
+        <section id="home-screen" class="  font-bold text-white text-center ">
+           <div class="min-h-screen flex flex-col justify-center items-center gap-10">
+            
+            <h1 class="text-[100px] ">alpha clash pro </h1>
+            <p>
+                click a button 
+            </p>
+            <button class="btn btn-primary w-60 text-2xl" onclick="play()">Play</button>
+           </div>
+        </section>
+    <!-- play-ground -->
+    <section id="play-ground" class=" hidden" >
+        <div class="  w-4/5 gap-10 flex flex-col m-auto pt-5">
+            <!-- screen start -->
+            <div class="m-auto ">
+                <div class="artboard artboard-horizontal phone-6 border-8 rounded-2xl
+                bg-[#FFFFFFB3] border-[#010313CC] 
+                flex flex-col items-center ">
+                
+                <div class="bg-[#010313CC] text-white p-2 rounded-b-xl">
+                    <p >Don't watch keyboard  while playing...
+
+                    </p>
+                    
+                </div>
+                <p id="output" class="text-9xl font-bold text-black text-center">
+                    y
+                </p>
+
+
+            </div>
+
+            </div>
+            <!-- screen end-->
+
+            <!-- keybord start-->
+            <div>
+                <div class="flex justify-center gap-1 my-1 w-full">
+                    <kbd class="kbd">q</kbd>
+                    <kbd class="kbd">w</kbd>
+                    <kbd class="kbd">e</kbd>
+                    <kbd class="kbd">r</kbd>
+                    <kbd class="kbd">t</kbd>
+                    <kbd class="kbd">y</kbd>
+                    <kbd class="kbd">u</kbd>
+                    <kbd class="kbd">i</kbd>
+                    <kbd class="kbd">o</kbd>
+                    <kbd class="kbd">p</kbd>
+                  </div> 
+                  <div class="flex justify-center gap-1 my-1 w-full">
+                    <kbd class="kbd">a</kbd>
+                    <kbd class="kbd">s</kbd>
+                    <kbd class="kbd">d</kbd>
+                    <kbd class="kbd">f</kbd>
+                    <kbd class="kbd">g</kbd>
+                    <kbd class="kbd">h</kbd>
+                    <kbd class="kbd">j</kbd>
+                    <kbd class="kbd">k</kbd>
+                    <kbd class="kbd">l</kbd>
+                  </div> 
+                  <div class="flex justify-center gap-1 my-1 w-full">
+                    <kbd class="kbd">z</kbd>
+                    <kbd class="kbd">x</kbd>
+                    <kbd class="kbd">c</kbd>
+                    <kbd class="kbd">v</kbd>
+                    <kbd class="kbd">b</kbd>
+                    <kbd class="kbd">n</kbd>
+                    <kbd class="kbd">m</kbd>
+                    <kbd class="kbd">/</kbd>
+                  </div>
+            </div>
+            <!-- keybord end-->
+
+            <!-- score and life start w-[80%]-->
+            <div class="  flex  justify-between">
+                <button class="btn rounded-full">
+                   Life <i class="fa-regular fa-heart"></i>
+                   <span>1</span>
+                  </button>
+
+                <button class="btn rounded-full">
+                    Score <i class="fa-solid fa-dollar-sign"></i>
+                   <span>1</span>
+
+                  </button>
+
+            </div>
+            <!-- score and life end -->
+            
+    
+        </div>
+    </section>    
+  <!-- play-ground end -->
+        <section class="scor flex justify-center items-center  min-h-screen hidden ">
+            
+            <div class="p-5 text-white flex flex-col justify-center items-center gap-5 bg-lime-400 rounded-xl">
+                <h1 class="text-8xl">
+                    <span>score:</span>
+                    <span>14</span>
+
+                </h1>
+                <button class="btn">Play now </button>
+                <p>Practice will make you Pro</p>
+            </div>
+
+
+    
+        </section>
+    </main>
+
+
+
+
+
+
+
+
+<script src="index.js"></script>
+</body>
+</html>
